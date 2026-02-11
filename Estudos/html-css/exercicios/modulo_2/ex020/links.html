@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+
+    <title>Links</title>
+
+    /*
+        # -> id;
+        . -> class;
+        : -> pseudo-element;
+        > -> clildres
+    
+    
+    */
+
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+        a:after{
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkslategray;
+        }
+
+        .especial{
+            background-color:#ff00006bd;
+            color: black;
+
+        }
+
+        .especial::before{
+            content:"->";
+        }
+        .especial::after{
+            content:"<-";
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/Jamykson/Curso_de_HTML5_e_CSS3.git" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://www.instagram.com/jamykson/" class="especial" target="_blank">Instagram</a></li>
+        <li><a href="https://linkedin.com/in/jamykson" target="_blank">Linkedin</a></li>
+    </ul>
+
+
+</body>
+</html>
